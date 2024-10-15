@@ -1,9 +1,8 @@
-with  open('./names.txt','r') as names_file:
-   names = names_file.readline()
-   num_names = 0
-   while (name ! = ''):
-      print(names)
-      num_names +=1
-      name =names_file.readline()
+with open("names.txt", "a") as file:
+    file.write("\nPort, Dan") 
 
-# print(f"{names}\nThere are {len(lines)})
+with open("names.txt", "r") as file:
+    contents = file.read()
+
+print("Contents of the file after appending:")
+print(contents)
