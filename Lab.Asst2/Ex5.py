@@ -1,7 +1,6 @@
 import pandas as pd
 
 def display_initial_rows(data):
-    # Implementation remains as before
     pass
 
 def exit_program(data):
@@ -9,7 +8,6 @@ def exit_program(data):
     exit()
 
 def sales_by_region_order_type(data):
-    # Implementation remains as before
     pass
 
 def get_user_selection(options, prompt): 
