@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .question-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #444;
+        }
+
+        .options input {
+            margin-right: 10px;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form method="POST">
+        <!-- Question 1 -->
+        <div class="question-container">
+            <h3>1. What year was the first email sent?</h3>
+            <div class="options">
+                <label><input type="radio" name="answer_1" value="1971" onclick="enableSubmit()"> 1971</label>
+                <label><input type="radio" name="answer_1" value="1985" onclick="enableSubmit()"> 1985</label>
+                <label><input type="radio" name="answer_1" value="1990" onclick="enableSubmit()"> 1990</label>
+                <label><input type="radio" name="answer_1" value="1965" onclick="enableSubmit()"> 1965</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-container">
+            <h3>2. Which country is the largest producer of coffee in the world?</h3>
+            <div class="options">
+                <label><input type="radio" name="answer_2" value="Colombia" onclick="enableSubmit()"> Colombia</label>
+                <label><input type="radio" name="answer_2" value="Ethiopia" onclick="enableSubmit()"> Ethiopia</label>
+                <label><input type="radio" name="answer_2" value="Brazil" onclick="enableSubmit()"> Brazil</label>
+                <label><input type="radio" name="answer_2" value="Vietnam" onclick="enableSubmit()"> Vietnam</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-container">
+            <h3>3. What is the title of Kanye West's debut album, released in 2004?</h3>
+            <div class="options">
+                <label><input type="radio" name="answer_3" value="Graduation" onclick="enableSubmit()"> Graduation</label>
+                <label><input type="radio" name="answer_3" value="The College Dropout" onclick="enableSubmit()"> The College Dropout</label>
+                <label><input type="radio" name="answer_3" value="Late Registration" onclick="enableSubmit()"> Late Registration</label>
+                <label><input type="radio" name="answer_3" value="808s & Heartbreak" onclick="enableSubmit()"> 808s & Heartbreak</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-container">
+            <h3>4. Which iconic TV show is known for the line, 'Winter is Coming'?</h3>
+            <div class="options">
+                <label><input type="radio" name="answer_4" value="Once Upon a Time" onclick="enableSubmit()"> Once Upon a Time</label>
+                <label><input type="radio" name="answer_4" value="Game of Thrones" onclick="enableSubmit()"> Game of Thrones</label>
+                <label><input type="radio" name="answer_4" value="The Sopranos" onclick="enableSubmit()"> The Sopranos</label>
+                <label><input type="radio" name="answer_4" value="Succession" onclick="enableSubmit()"> Succession</label>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-container">
+            <h3>5. Which movie is the highest-grossing film of all time?</h3>
+            <div class="options">
+                <label><input type="radio" name="answer_5" value="Avatar" onclick="enableSubmit()"> Avatar</label>
+                <label><input type="radio" name="answer_5" value="Avengers: Endgame" onclick="enableSubmit()"> Avengers: Endgame</label>
+                <label><input type="radio" name="answer_5" value="Titanic" onclick="enableSubmit()"> Titanic</label>
+                <label><input type="radio" name="answer_5" value="Star Wars: Force Awakens" onclick="enableSubmit()"> Star Wars: Force Awakens</label>
+            </div>
+        </div>
+
+        <button id="submit-button" type="submit" disabled>Submit Answers</button>
+    </form>
+
+    <script>
+        // this is for submit button after a choice is selected
+        function enableSubmit() {
+            document.getElementById('submit-button').disabled = false;
+        }
+    </script>
+</body>
+</html>
+
+
