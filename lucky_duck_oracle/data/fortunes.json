@@ -1,0 +1,15 @@
+{
+    "default": ["You will have a pleasant surprise today.", "An exciting opportunity is heading your way."],
+    "Aries": ["Your boldness will lead to success today.", "Prepare for unexpected challenges."],
+    "Taurus": ["Stability and patience are your keys today.", "Look for beauty in simple things."],
+    "Gemini": ["Communication will unlock opportunities.", "Be curious and try something new."],
+    "Cancer": ["Emotions run high; trust your instincts.", "Nurture your relationships today."],
+    "Leo": ["Your confidence will inspire others.", "A moment of glory awaits you."],
+    "Virgo": ["Practicality will solve your problem.", "Take time to organize your priorities."],
+    "Libra": ["Harmony is your goal today.", "Seek balance in all you do."],
+    "Scorpio": ["Your determination will pay off.", "Keep your passions alive."],
+    "Sagittarius": ["Adventure calls; follow it.", "Your optimism will attract good fortune."],
+    "Capricorn": ["Hard work brings rewards.", "Focus on long-term goals."],
+    "Aquarius": ["Innovation will set you apart.", "Be open to new perspectives."],
+    "Pisces": ["Your creativity will shine today.", "Trust in the flow of life."]
+}

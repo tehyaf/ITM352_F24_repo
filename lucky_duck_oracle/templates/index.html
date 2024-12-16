@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Lucky Duck Oracle</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="center-box">
+        <div class="title-box">
+            <h1>Welcome to Lucky Duck Oracle</h1>
+        </div>
+        <form method="POST" action="/">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="birthday">Enter your birthdate:</label>
+            <input type="date" id="birthdate" name="birthday" required>
+            <button type="submit">Next</button>
+        </form>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+

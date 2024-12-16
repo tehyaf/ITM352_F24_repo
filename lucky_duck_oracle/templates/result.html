@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Your Fortune</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="center-box">
+        <div class="title-box">
+            <h1>Welcome, {{ name }}!</h1>
+        </div>
+    <h2>Your Zodiac Sign: {{ zodiac }}</h2>
+
+    <div class="fortune-section">
+        <h3>Today's Fortune:</h3>
+        <p>{{ fortune }}</p>
+    </div>
+
+    <div class="lucky-numbers-section">
+        <h3>Your Lucky Numbers:</h3>
+        <p>{{ lucky_numbers | join(", ") }}</p>
+    </div>
+
+    <div class="actions">
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
